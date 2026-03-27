@@ -10,7 +10,7 @@ processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
 model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
 
 # Load audio (16kHz required)
-audio, sr = librosa.load("q1\data\MLK_2.wav", sr=16000)
+audio, sr = librosa.load("q1\data\MLK_1.wav", sr=16000)
 
 input_values = processor(audio, return_tensors="pt", sampling_rate=16000).input_values
 
