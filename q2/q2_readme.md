@@ -9,7 +9,6 @@ This folder contains a justified reduced reproduction of "Disentangled Represent
 - `configs/baseline.json`: compact speaker encoder baseline.
 - `configs/proposed.json`: reduced reproduction of the paper's disentangler.
 - `configs/improved.json`: critique-motivated variant with explicit environment-label supervision on the environment code.
-- `review.pdf`: technical critical review.
 
 ## Dataset
 
@@ -36,17 +35,11 @@ python q2/train.py --config q2/configs/improved.json
 python q2/eval.py --config q2/configs/improved.json --checkpoint q2/results/checkpoints/improved/best.pt
 ```
 
-To regenerate the review PDF:
-
-```bash
-python q2/generate_review_pdf.py
-```
-
 ## Checkpoints Corresponding To Reported Results
 
-- Baseline results come from [best.pt](C:/Users/AnoopPC/Desktop/assg/Speech%20Understanding/Assg1/q2/results/checkpoints/baseline/best.pt)
-- Proposed reduced reproduction results come from [best.pt](C:/Users/AnoopPC/Desktop/assg/Speech%20Understanding/Assg1/q2/results/checkpoints/proposed/best.pt)
-- Improved model results come from [best.pt](C:/Users/AnoopPC/Desktop/assg/Speech%20Understanding/Assg1/q2/results/checkpoints/improved/best.pt)
+- Baseline results come from `best.pt` in `results/checkpoints/baseline/best.pt`
+- Proposed reduced reproduction results come from `best.pt` in `results/checkpoints/proposed/best.pt`
+- Improved model results come from `best.pt` in `results/checkpoints/improved/best.pt`
 
 ## Reported Metrics
 
