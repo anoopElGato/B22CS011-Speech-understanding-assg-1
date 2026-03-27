@@ -1,0 +1,29 @@
+{
+  "run_name": "proposed",
+  "model_type": "proposed",
+  "seed": 7,
+  "dataset": {
+    "root": "dataset/dev-clean"
+  },
+  "sample_rate": 16000,
+  "segment_seconds": 2.0,
+  "n_mels": 64,
+  "embedding_dim": 128,
+  "latent_dim": 128,
+  "train_ratio": 0.6,
+  "val_ratio": 0.2,
+  "batch_size": 16,
+  "epochs": 8,
+  "lr": 0.001,
+  "steps_per_epoch": 220,
+  "margin": 0.5,
+  "lambda_spk": 1.0,
+  "lambda_recon": 1.0,
+  "lambda_env": 1.0,
+  "lambda_adv": 0.5,
+  "lambda_corr": 1.0,
+  "lambda_env_ce": 0.5,
+  "env_names": ["clean", "gaussian", "reverb", "bandstop"],
+  "num_eval_target_trials": 200,
+  "num_eval_impostor_trials": 200
+}

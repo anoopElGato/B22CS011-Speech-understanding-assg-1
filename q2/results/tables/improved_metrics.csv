@@ -1,0 +1,3 @@
+run_name,condition,eer,min_dcf,threshold
+improved,matched,36.0,0.04825,0.62619
+improved,mismatched,35.0,0.04925,0.39014
