@@ -47,28 +47,28 @@ pip install numpy scipy pandas matplotlib librosa torch transformers
 Run all commands from the repository root:
 
 ```powershell
-cd "c:\Users\AnoopPC\Desktop\assg\Speech Understanding\Assg1"
+cd "q1\"
 ```
 
 ### 1. Run `mfcc_manual.py`
 
-This script manually computes MFCC features from `q1\data\MLK_1.wav`.
+This script manually computes MFCC features from `data\MLK_1.wav`.
 
 ```powershell
-python q1\mfcc_manual.py
+python mfcc_manual.py
 ```
 
 Expected output:
 
 - Prints the MFCC matrix shape
-- Uses the built-in hardcoded audio path `q1\data\MLK_1.wav`
+- Uses the built-in hardcoded audio path `data\MLK_1.wav`
 
 ### 2. Run `leakage_snr.py`
 
 This script compares spectral leakage and SNR for rectangular, Hamming, and Hanning windows.
 
 ```powershell
-python q1\leakage_snr.py
+python leakage_snr.py
 ```
 
 Expected output:
@@ -79,14 +79,14 @@ Expected output:
 Note:
 
 - The current script uses a synthetic sinusoidal signal, not a `.wav` file
-- There is commented code inside the file if you want to switch to `q1\data\MLK_1.wav`
+- There is commented code inside the file if you want to switch to `data\MLK_1.wav`
 
 ### 3. Run `voiced_unvoiced.py`
 
-This script performs voiced/unvoiced classification using cepstral analysis on `q1\data\MLK_1.wav`.
+This script performs voiced/unvoiced classification using cepstral analysis on `data\MLK_1.wav`.
 
 ```powershell
-python q1\voiced_unvoiced.py
+python voiced_unvoiced.py
 ```
 
 Expected output:
@@ -95,10 +95,10 @@ Expected output:
 
 ### 4. Run `phonetic_mapping.py`
 
-This script loads a pretrained Wav2Vec2 model, decodes speech from `q1\data\MLK_2.wav`, and compares model boundaries with manually defined segment boundaries.
+This script loads a pretrained Wav2Vec2 model, decodes speech from `data\MLK_2.wav`, and compares model boundaries with manually defined segment boundaries.
 
 ```powershell
-python q1\phonetic_mapping.py
+python phonetic_mapping.py
 ```
 
 Expected output:
@@ -122,8 +122,8 @@ Important:
 ## Quick Run Summary
 
 ```powershell
-python q1\mfcc_manual.py
-python q1\leakage_snr.py
-python q1\voiced_unvoiced.py
-python q1\phonetic_mapping.py
+python mfcc_manual.py
+python leakage_snr.py
+python voiced_unvoiced.py
+python phonetic_mapping.py
 ```
