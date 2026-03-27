@@ -95,7 +95,7 @@ Expected output:
 
 ### 4. Run `phonetic_mapping.py`
 
-This script loads a pretrained Wav2Vec2 model, decodes speech from `data\MLK_2.wav`, and compares model boundaries with manually defined segment boundaries.
+This script loads a pretrained Wav2Vec2 model, decodes speech from `data\MLK_1.wav`, and compares model boundaries with manually defined segment boundaries.
 
 ```powershell
 python phonetic_mapping.py
