@@ -13,7 +13,6 @@ The four scripts covered here are:
 
 ```text
 Assg1/
-|-- README.md
 `-- q1/
     |-- data/
     |   |-- MLK_1.wav
@@ -22,6 +21,7 @@ Assg1/
     |-- mfcc_manual.py
     |-- leakage_snr.py
     |-- voiced_unvoiced.py
+    |-- README.md
     `-- phonetic_mapping.py
 ```
 
